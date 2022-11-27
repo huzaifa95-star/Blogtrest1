@@ -24,10 +24,11 @@ export default function Home({ posts }) {
 }
 
 // Fetch data at build time
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const posts = (await getPosts()) || [];
+
   return {
-    props: { posts },
+    props: { posts }
   };
 }
 
