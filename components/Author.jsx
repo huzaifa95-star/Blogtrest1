@@ -7,7 +7,7 @@ const Author = ({ author }) => (
         alt={author.name}
         height="100px"
         width="100px"
-        className="align-middle rounded-full"
+        className="inline-block align-middle rounded-full"
         src={author.photo.url}
       />
     </div>
