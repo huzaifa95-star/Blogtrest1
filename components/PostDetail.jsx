@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Head from 'next/head';
 import moment from 'moment';
 
 const PostDetail = ({ post }) => {
@@ -44,6 +44,12 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
+      <Head>
+        <title>{post.title}-My blog site</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:author" content={post.author.name} />
+        <meta property="og:keywords" content={post.tags} />
+      </Head>
       <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
         <div className="relative overflow-hidden shadow-md mb-6">
           <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
