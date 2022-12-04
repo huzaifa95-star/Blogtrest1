@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9736994394968523"
         crossorigin="anonymous"></script>
+        {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
         </Head>
         <body>
           <Main />
